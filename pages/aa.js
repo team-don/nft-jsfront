@@ -16,7 +16,7 @@ const Index = (props) => (
                      // src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png"
                      src={`${prefix}/images/search.png`}
                      className={style.img}
-                     // th:onclick="searchClick()"aa
+                     // th:onclick="searchClick()"
                     onClick={searchClick}
                  alt="13"/>
                     <ul id="search-list">
