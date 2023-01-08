@@ -23,6 +23,7 @@ const Index = (props) => (
 
         </ul>
       </div>
+      <div>TEST</div>
     </main>
 
 );
