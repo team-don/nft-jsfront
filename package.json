@@ -8,7 +8,7 @@
     "build": "next build && next export",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "next build && next export && touch out/.nojekyllv && git add -f out/ && git commit -m 'deploy to gh-pages' && git subtree push --prefix=out origin gh-pages --rejoin"
+    "deploy": "next build && next export && touch out/.nojekyllv && git add -f out/ && git commit -m 'deploy to gh-pages' && git subtree push --prefix out origin gh-pages --rejoin"
   },
   "dependencies": {
     "@next/font": "13.1.1",
