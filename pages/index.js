@@ -23,7 +23,7 @@ const Index = (props) => (
 
         </ul>
       </div>
-      <div>TEST</div>
+      <div>TEST22</div>
     </main>
 
 );
