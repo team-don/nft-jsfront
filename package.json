@@ -1,0 +1,23 @@
+{
+  "name": "nft-front",
+  "version": "0.1.0",
+  "homepage": "http://team-don.github.io/nft-jsfront",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next export",
+    "start": "next start",
+    "lint": "next lint",
+    "deploy": "next build && next export && touch out/.nojekyll && git pull origin gh-pages && git add -f out/ && git commit -m 'deploy to gh-pages' && git subtree push --prefix out origin gh-pages"
+  },
+  "dependencies": {
+    "@next/font": "13.1.1",
+    "axios": "^1.2.2",
+    "eslint": "8.31.0",
+    "eslint-config-next": "13.1.1",
+    "next": "13.1.1",
+    "next-optimized-images": "^2.6.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  }
+}

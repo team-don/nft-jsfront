@@ -1,1 +1,0 @@
-(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[447],{9173:function(n,u,t){(window.__NEXT_P=window.__NEXT_P||[]).push(["/nft",function(){return t(6782)}])},6782:function(n,u,t){"use strict";function _(){}t.r(u),t.d(u,{default:function(){return _}})}},function(n){n.O(0,[774,888,179],function(){return n(n.s=9173)}),_N_E=n.O()}]);
