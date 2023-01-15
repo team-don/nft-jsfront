@@ -5,7 +5,6 @@ import { prefix } from "../config/config";
 
 function App({ Component, pageProps }) {
     return (
-        // @ts-ignore
         <PortfolioProvider value={{ prefix }}>
                     <Component {...pageProps} />
         </PortfolioProvider>
