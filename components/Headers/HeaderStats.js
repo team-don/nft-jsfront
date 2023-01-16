@@ -3,6 +3,7 @@ import axios from "axios";
 // import { useQuery } from "react-query";
 import { dehydrate, QueryClient, useQuery } from "react-query";
 import { crawling } from "pages/api/crawling";
+import { getServerSideProps } from "components/ServerSide/ServerSide"
 
 // components
 import CardStats from "components/Cards/CardStats.js";
@@ -15,22 +16,23 @@ import CardStats from "components/Cards/CardStats.js";
 //   const query = useQuery("todos", getData);
 //   return <pre>{JSON.stringify(query, null, 2)}</pre>;
 // }
-export async function getServerSideProps() {
-
-  const queryClient = new QueryClient();
-
-  await queryClient.prefetchInfiniteQuery(
-      "crawling",
-      async () => await crawling());
-
-  return {
-    props: {
-      dehydratedState: JSON.parse(JSON.stringify(dehydrate(queryClient))),
-    }
-  }
-}
+// export async function getServerSideProps() {
+//
+//   const queryClient = new QueryClient();
+//
+//   await queryClient.prefetchInfiniteQuery(
+//       "crawling",
+//       async () => await crawling());
+//
+//   return {
+//     props: {
+//       dehydratedState: JSON.parse(JSON.stringify(dehydrate(queryClient))),
+//     }
+//   }
+// }
 
 export default function HeaderStats() {
+  // getServerSideProps()
   const { isLoading, error, data } = useQuery(['crawling'],() =>
           crawling(),
       {
