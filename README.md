@@ -9,3 +9,4 @@
 - (If not) Run in terminal `npm run dev`
 - Navigate to https://localhost:3000
 - Check more about [Tailwind CSS](https://tailwindcss.com/?ref=creativetim)
+-
